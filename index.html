@@ -1,0 +1,294 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Quinta Aplicacion</title>
+
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/temasapp5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="acciones" type="text/javascript"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/calentador2.jpg','imagenes/invento.jpg','imagenes/foco1.jpg','imagenes/reciclaje.jpg')">
+<div data-role="page" id="Principal" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-add-back-btn="Regresar" data-back-btn-theme="b">
+    <h1>DIA DE LA TIERRA </h1>
+    </div>
+   <div>
+   <ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-a">
+   <li class="ui-first-child ui-last-child">
+   <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+   <h2>Fecha de conmemoracion... </h2>
+   <p>Muestra cuando es la fecha.</p>
+   </a>
+   </li>
+    <li class="ui-first-child ui-last-child">
+   <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+   <h2>¿Por qué se celebra? </h2>
+   <p>Da una explicacion del por que se celebra</p>
+   </a>
+   </li>
+     <li class="ui-first-child ui-last-child">
+   <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+   <h2>Cuidados al planeta </h2>
+   <p>Muestra algunos cuidados para el planeta</p>
+   </a>
+   </li>
+      <li class="ui-first-child ui-last-child">
+   <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+   <h2>Efectos del cambio climatico</h2>
+   <p>Muestra los efectos del cambio climatico</p>
+   </a>
+   </li>
+       <li class="ui-first-child ui-last-child">
+   <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+   <h2>REFLEXION</h2>
+   <p>Reflexion del alumno</p>
+   </a>
+   </li>
+   </ul>
+  </div>
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+   <div>
+   <img src="res/android/mdpi.png" width="46" height="46">
+   </div>
+    <div>
+    <h4>Aplicacion Cinco Dia de la Tierra</h4>
+    <h4>Carlos Antonio Otero</h4>
+    </div>
+    </div>
+    </div>
+    
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+     <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+     <h1>Fecha de conmemoracion</h1>
+      </div>
+       <div data-role="content" align="center">
+       <div>
+       <img src="imagenes/tierra1.jpg" width="150" height="150">
+       <p><center>
+         <p>El 22 de abril se celebra el Día Mundial de la Tierra. Esta fecha fue elegida porque el 22 de abril de 1970 una manifestación en Estados Unidos para que se creara en el Gobierno una agencia ambiental que trabaje sobre las problemáticas medioambientales.
+         </p>
+       </center></p>
+       <div data-role="main" class="ui-content">
+   <div data-role="collapsible" data-content-theme="false">
+   <h1>la Tierra</h1>
+   <div>
+   <img src="imagenes/reciclaje 2.jpg" width="60%" height="50%"></div>
+   <p><center>Asistir al Festival de la Madre Tierra que se realiza en la ciudad de La Paz en Bolivia. Este festival tiene lugar durante la conmemoración del Día de la Tierra el día 22 de abril. Este evento fue creado el fin de dar a conocer los grandes retos que tiene la región para cuidar el medio ambiente. Durante el festival se proyectan películas asociadas al cuidado del planeta. Además, se invitan artistas musicales, fotógrafos, entre otras personalidades para que participen en el evento.
+En Colombia existe el "Proyecto para Limpiar la Basura". Este proyecto se encarga de organizar actividades en torno al arte. Son actividades que buscan educar a la población en general acerca de la huella y el impacto que tiene la basura que cada persona genera. El objetivo es enseñar a las personas a reciclar y a hacer uso apropiado de las basuras que generan con el fin de evitar la contaminación.</center></p>
+   </div>
+   </div>
+<div>
+</div>
+       
+       </div>
+       </div>
+     <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+   <div>
+   <img src="res/android/mdpi.png" width="46" height="46">
+   </div>
+    <div>
+    <h4>Aplicacion Cinco Dia de la Tierra</h4>
+    <h4>Carlos Antonio Otero</h4>
+    </div>
+    </div>
+         </div>
+          </div>
+          
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+          <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+           <h1>¿Por que celebramos este día?</h1>
+           </div>
+            <div data-role="content" align="center">
+            <div>
+            <p><center>Según el refrán “Todos los días es Día de la Tierra”. Pero se celebra popularmente el 22 de abril. ¿Por qué?<br>
+
+
+Rumores persistentes  sostiene que el 22 de abril fue elegido porque es el cumpleaños de Vladimir Lenin, el fundador de la Unión Soviética.<br>
+
+"El objetivo de Lenin era destruir la propiedad privada, objetivo que también comparten los ambientalistas”  publicó en 2004 la web Capitalism Magazine.<br>
+
+Kathleen Rogers, presidenta de la organización del Día de la Tierra en Washington y una de las primeras fundadoras en la organización del Día de la Tierra, se burla de la teoría.<br>
+
+Según Kathleen, en 1970 el  22 de abril fue elegido como Día de la Tierra en parte, porque ese año cayó en un miércoles, el día de la semana para fomentar una amplia participación en las manifestaciones del medio ambiente celebrada en todo el país.<br>
+
+"Todo funcionó a la perfección, porque todo el mundo estaba en el trabajo y al terminar fueron a la manifestación” dijo Kathleen.<br></center></p>
+
+<!-- Start WOWSlider.com -->
+<iframe src="visor/indexwow.html" style="width:490px;height:190px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe>
+<!-- End WOWSlider.com -->
+
+
+            </div>
+       <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+   <div>
+   <img src="res/android/mdpi.png" width="46" height="46">
+   </div>
+    <div>
+    <h4>Aplicacion Cinco Dia de la Tierra</h4>
+    <h4>Carlos Antonio Otero</h4>
+    </div>
+    </div>
+         </div>
+          </div>
+          
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+          <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+           <h1>Cuidados al planeta</h1>
+           </div>
+            <div data-role="content" align="center">
+            <div>
+           <h4><center>CALENTADOR SOLAR</center></h4>
+           <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image10','','imagenes/calentador2.jpg',1)"><img src="imagenes/bolier.jpg" width="300" height="200" id="Image10"></a>
+<p><center> El cambiar tu calentador(boiler) por un calentador solar ayuda mucho y aparte evita el uso de gas.</center></p><br> 
+
+<h4><center>USO DE BICI</center></h4>
+     <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image11','','imagenes/invento.jpg',1)"><img src="imagenes/ciclista.jpg" width="200" height="300" id="Image11"></a>
+<p><center>Usa bicicleta, transporte público o comparte el auto cuando lo utiliceS,a demas de no contaminar te ayuda a hacer ejercicio</center></p><br>
+
+            
+
+            <h4><center>FOCOS</center></h4>
+            <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image12','','imagenes/foco1.jpg',1)"><img src="imagenes/focos.jpg" width="300" height="200" id="Image12"></a>
+<p><center>El uso de focos ahorradores en casa nos ayuda a gastar menos energia electrica y sirve que tu pago de luz es menor al que tienes al ocupar bombillas de las normales</center></p><br>
+
+            <h4><center>RECICLADO DE BASURA</center></h4>
+            <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image13','','imagenes/reciclaje.jpg',1)"><img src="imagenes/recicla.jpg" width="200" height="300" id="Image13"></a>
+<p><center>Separa tu basura al menos en organico e inorganico para ayudar con un mejor cuidado ambiental </center></p>
+            </div>
+       <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+   <div>
+   <img src="res/android/mdpi.png" width="46" height="46">
+   </div>
+    <div>
+    <h4>Aplicacion Cinco Dia de la Tierra</h4>
+    <h4>Carlos Antonio Otero</h4>
+    </div>
+    </div>
+         </div>
+          </div>
+          
+<div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+          <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+           <h1>Efectos del cambio climatico</h1>
+           </div>
+            <div data-role="content" align="center">
+            <div>
+            
+             <div data-role="main" class="ui-content">
+   <div data-role="collapsible" data-content-theme="false">
+   <h1>AUMENTO DEL NIVEL DEL MAR</h1>
+   <div>
+   <img src="imagenes/nivel.jpg" width="70%" height="50%"></div>
+   <p> Cuando la temperatura de la superficie se calienta, se produce la fusión del hielo de los glaciares, del hielo marino, así como de la plataforma de hielo polar. Cuando esto sucede, aumenta la cantidad de agua que desemboca en los océanos de todo el mundo y conduce a que crezcan los niveles del mar drásticamente, poniendo en peligro numerosas ciudades que se sitúan bajo el nivel del mar. Los científicos han especulado que si se derrite a este ritmo el hielo de la Antártida y Groenlandia podría elevar los niveles del mar en más de 20 metros de aquí a 2100.</p>
+   <div>
+   <img src="imagenes/tierra.jpg" width="63%" height="50%"></div>
+   </div>
+   </div>
+            
+ <div data-role="main" class="ui-content">
+   <div data-role="collapsible" data-content-theme="false">
+   <h1>OLAS DE CALOR</h1>
+   <div>
+   <img src="imagenes/olas.jpg" width="50%" height="50%"></div>
+   <p><center>Olas de calor severas se han vuelto cada vez más comunes, y la razón no es otra que los gases de efecto invernadero estan atrapados dentro en la atmósfera. Los estudios indican que estas olas de calor seguirán aumentando en los próximos años y en el futuro 100 veces peor. Esto dará lugar a un aumento de enfermedades relacionadas con el calor y también desencadenar innumerables incendios.
+</center></p>
+   </div>
+   </div>
+
+<div data-role="main" class="ui-content">
+   <div data-role="collapsible" data-content-theme="false">
+   <h1>TORMENTAS</h1>
+   <div>
+   <img src="imagenes/tormentas.jpg" width="50%" height="50%"></div>
+   <p><center>Cuando la temperatura de los océanos se vuelve más cálida, las tormentas son más intensas. El calentamiento global hará que las tormentas puedan llegar a ser extremadamente graves, así como su número. El agua caliente del océano alimentará la intensidad de las tormentas y dan como resultado un mayor número de huracanes extremadamente devastadores. Efectos como estos se están sintiendo ya hoy – ya hemos visto que en los últimos 30 años, la gravedad y número de ciclones, huracanes y tormentas han aumentado y se han casi duplicado. Todo esto conduce a inundaciones, pérdida de vidas, así como daños a la propiedad.</center></p>
+   </div>
+   </div>
+
+<div data-role="main" class="ui-content">
+   <div data-role="collapsible" data-content-theme="false">
+   <h1>ESPECIES EN PELIGRO DE EXTINCION</h1>
+   <div>
+   <img src="imagenes/extincion.jpg" width="50%" height="50%"></div>
+   <p><center>La desertificación, el aumento de las temperaturas de los océanos así como la deforestación está contribuyendo a los cambios desastrosos e irreversibles que se están produciendo en el hábitat y amenaza con poner en peligro a varias especies, que pronto podrían extinguirse. El oso polar pasa a ser el primer ejemplo y vemos que sus números están continuamente cayendo a medida que luchan para aclimatarse a la pérdida de hielo en las regiones del ártico. Una característica crucial para el éxito humano es la biodiversidad, y la pérdida de flora y fauna a causa de la extinción en masa que amenazan a nuestro planeta, pone en serio peligro la continuidad de la raza humana.</center></p>
+   </div>
+   </div>
+
+            </div>
+            </div>
+      <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+   <div>
+   <img src="res/android/mdpi.png" width="46" height="46">
+   </div>
+    <div>
+    <h4>Aplicacion Cinco Dia de la Tierra</h4>
+    <h4>Carlos Antonio Otero</h4>
+    </div>
+    </div>
+         </div>
+          </div>
+          
+<div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+          <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+           <h1>REFLEXION</h1>
+           </div>
+            <div data-role="content" align="center">
+            <div>
+            <h1><center>Esta es mi reflexion:</center></h1>
+            <br>
+            <p>En todas partes nosotros los humanos hemos ido contaminando cada vez más a el planeta tierra, y no nos damos cuenta que al contaminarla tambien nos estamos contaminando a nosotros mismos, ya que nosotros vivimos de la misma tierra, sin embargo hay mucha gente a la cual le importa querer mantener y ayudar a tener mas limpio nuestro entorno, pero no siempre es ayuda, hay gente que se preocupa pero no hace nada para remediarlo, asi que hay que poner un poco de nosotros, ayudar, si vemos una basura tirada, recogerla y tirarla al bote de la basura, juntos podemos hacer un mundo mejor, ayudanos.</p>
+            
+           <!-- Start WOWSlider.com -->
+<iframe src="visor2/indexWOW.html" style="width:350px;height:270px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe>
+<!-- End WOWSlider.com -->
+
+<a href="http://www.un.org/es/events/motherearthday/">MAS INFORMACION DEL DIA DE LA TIERRA</a>
+
+            <div>
+            </div>
+            </div>
+            </div>
+      <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+   <div>
+   <img src="res/android/mdpi.png" width="46" height="46">
+   </div>
+    <div>
+    <h4>Aplicacion Cinco Dia de la Tierra</h4>
+    <h4>Carlos Antonio Otero</h4>
+    </div>
+    </div>
+         </div>
+          </div>
+          
+</body>
+</html>
